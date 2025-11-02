@@ -9,6 +9,6 @@ def days_from_date(date_str):
     return delta.days
 
 date = "2020-10-12"
-result = days_from_date(date)
-print(result)
+result_1 = days_from_date(date)
+print(result_1)
 
