@@ -1,12 +1,14 @@
 
 from datetime import datetime
 
-today = datetime.today().date()
-date = "2023-10-15"
-input_date = datetime.strptime(date, '%Y-%m-%d').date()
-delta = today - input_date
-delta_int= delta.days
+def days_from_date(date_str):
+   
+    today = datetime.today().date()
+    input_date = datetime.strptime(date_str, '%Y-%m-%d').date()
+    delta = today - input_date
+    return delta.days
 
-print(delta)
- 
+date = "2020-10-12"
+result = days_from_date(date)
+print(result)
 
